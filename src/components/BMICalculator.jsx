@@ -13,7 +13,7 @@ function BMICalculator() {
     setResult(null);
 
     try {
-      const response = await axios.post('bmback-production.up.railway.app', {
+      const response = await axios.post('https://bmback-production.up.railway.app', {
         height_cm: parseFloat(height),
         weight_kg: parseFloat(weight),
       });
