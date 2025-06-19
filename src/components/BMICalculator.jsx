@@ -13,7 +13,7 @@ function BMICalculator() {
     setResult(null);
 
     try {
-      const response = await axios.post('http://127.0.0.1:8000/api/bmi', {
+      const response = await axios.post('bmback-production.up.railway.app', {
         height_cm: parseFloat(height),
         weight_kg: parseFloat(weight),
       });
